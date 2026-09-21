@@ -1,0 +1,27 @@
+backend:
+  name: git-gateway
+
+local_backend: true
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "pages"
+    label: "Pagina's"
+    files:
+      - name: "home"
+        label: "Homepage"
+        file: "content/home.md"
+        fields:
+          - label: "Titel"
+            name: "title"
+            widget: "string"
+
+          - label: "Afbeelding"
+            name: "image"
+            widget: "image"
+
+          - label: "Tekst"
+            name: "body"
+            widget: "markdown"
