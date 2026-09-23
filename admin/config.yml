@@ -19,11 +19,52 @@ collections:
           - label: "Titel"
             name: "title"
             widget: "string"
-
           - label: "Afbeelding"
             name: "image"
             widget: "image"
+            required: false
+          - label: "Tekst"
+            name: "body"
+            widget: "markdown"
 
+      - name: "about"
+        label: "Over ons"
+        file: "content/about.md"
+        fields:
+          - label: "Titel"
+            name: "title"
+            widget: "string"
+          - label: "Tekst"
+            name: "body"
+            widget: "markdown"
+
+      - name: "services"
+        label: "Diensten"
+        file: "content/services.md"
+        fields:
+          - label: "Titel"
+            name: "title"
+            widget: "string"
+          - label: "Diensten"
+            name: "services"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - label: "Titel"
+                name: "title"
+                widget: "string"
+
+              - label: "Beschrijving"
+                name: "description"
+                widget: "text"
+
+      - name: "contact"
+        label: "Contact"
+        file: "content/contact.md"
+        fields:
+          - label: "Titel"
+            name: "title"
+            widget: "string"
           - label: "Tekst"
             name: "body"
             widget: "markdown"
