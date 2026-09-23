@@ -1,5 +1,5 @@
 ---
-title: Blubblub
+title: Beeb beeb, I'm a sheep
 layout: base.njk
 permalink: /
 image: /images/uploads/logo_kwinten.png
